@@ -186,8 +186,10 @@ def auto_com(text , state):
        time.sleep(0.05)
        return None
     if state < len(matches):
-       return None
+       return matches[state]
     return None
+   
+
 readline.set_completer(auto_com)
 readline.parse_and_bind("tab: complete")
         
