@@ -14,3 +14,7 @@ It is a custom shell made using python.
 11. copy : It is used to copy (print) whatever the user type next to it
 12. Is : It is used to find that something is or is not present in the directory. It will find whatever typed next to it. It can find buitin commands and any file. If it finds that file , it will prints its path.
 13. Auto-completion : If you press tab it will auto complete uiltin commands that are you typing
+
+
+## How to run 
+Just download a main.exe from here and double click to run and its ready to use.
