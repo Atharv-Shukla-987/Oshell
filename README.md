@@ -7,8 +7,8 @@ It is a custom shell made using python.
 ## Features
 1. exit : It is used to exit from the shell. 
 2. cls : It is used to clear the shell
-3. gpd : Full form of gpd is "go to previous directory". As its name suggusts , it is used to go on previos directory at which user was
-4. gd : Full form of gd is "go to directory". As its name sugests, it is used to go to  directory which user types just after it. 
+3. gpd : Full form of gpd is "go to previous directory". As its name suggests , it is used to go on previos directory at which user was
+4. gd : Full form of gd is "go to directory". As its name suggests, it is used to go to  directory which user types just after it. 
 5. pwd : Full form of pwd is "print working directory", its function is same as its name.
 6. cat : It is used to view the content of a file. To view content of any file just type cat followed by the name of file.
 7. declare : It is used to declare shell variables. To declare any variable just type declare followed by variable name and then by its value.
@@ -22,3 +22,6 @@ It is a custom shell made using python.
 
 ## How to run 
 Just download a main.exe from here and double click to run and its ready to use.
+
+## License
+This project is licensed under the MIT License.
