@@ -1,4 +1,8 @@
-# Oshell
+# Oshell 
+
+<img width="1366" height="727" alt="image" src="https://github.com/user-attachments/assets/65f9d6ba-24c3-4311-ad33-018608d2e6cd" />
+
+
 It is a custom shell made using python. 
 ## Features
 1. exit : It is used to exit from the shell. 
