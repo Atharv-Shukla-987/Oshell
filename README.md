@@ -23,5 +23,15 @@ It is a custom shell made using python.
 ## How to run 
 Just download a main.exe from here and double click to run and its ready to use.
 
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request. Use the following steps
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes
+4. Push and open a Pull Request
+
+
 ## License
 This project is licensed under the MIT License.
