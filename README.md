@@ -3,7 +3,9 @@
 <img width="1366" height="727" alt="image" src="https://github.com/user-attachments/assets/65f9d6ba-24c3-4311-ad33-018608d2e6cd" />
 
 
-It is a custom shell made using python. I build it from scratch because i wanna learn how th shell actually works.
+It is a custom shell made using python. I build it from scratch because i wanna learn how th shell actually works.It has variable management and tab-auto-completion and many custom commands. Its important to understand that its not for replacing powershell or cmd , It's just a fun learning project that 
+actually works . Anyone can use it without any need of installing python , the user is just need to double click on .exe .
+
 ## Features
 1. exit : It is used to exit from the shell. 
 2. cls : It is used to clear the shell
