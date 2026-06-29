@@ -21,11 +21,16 @@ It is a custom shell made using python.
 
 
 ## How to run 
-Just download a main.exe from here and double click to run and its ready to use.
+Just download a main.exe from here and double click to run and its ready to use. If you want to run it from source code , then run these commands in your terminal (make sure you have Python 3.x is installed in your device)
+
+1. git clone https://github.com/Atharv-Shukla-987/Oshell.git
+2. cd Oshell
+3. python main.py
+   Now enjoy using Oshell commands !!!!!
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request. Use the following steps
+Contributions are welcome! Feel free to contribute  love helps but never get any lol. Use the following steps
 
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/my-feature`)
