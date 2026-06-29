@@ -13,13 +13,25 @@ actually works . Anyone can use it without any need of installing python , the u
 4. gd : Full form of gd is "go to directory". As its name suggests, it is used to go to  directory which user types just after it. 
 5. pwd : Full form of pwd is "print working directory", its function is same as its name.
 6. cat : It is used to view the content of a file. To view content of any file just type cat followed by the name of file.
-7. declare : It is used to declare shell variables. To declare any variable just type declare followed by variable name and then by its value.
+7. declare : It is used to declare shell variables. To declare any variable just type declare followed by variable name and then by its value. Example : 
+    oshell> declare name Atharv
+    declared!!
 8. history : As the command itself suggests , it is used to view the history of shell and to get any number of last commands of shell just type history followed by that number. 
-9. -p : It is used to print shell variables. to do it type -p followed by name of variable that you want to print 
-10. -d : It is used to delete shell variables. to do it type -p followed by name of variable that you want to delete
-11. copy : It is used to copy (print) whatever the user type next to it
-12. Is : It is used to find that something is or is not present in the directory. It will find whatever typed next to it. It can find buitin commands and any file. If it finds that file , it will prints its path.
-13. Auto-completion : If you press tab it will auto complete uiltin commands that are you typing
+9. -p : It is used to print shell variables. to do it type -p followed by name of variable that you want to print Example :
+   oshell> declare name Atharv
+   oshell> -p name
+   name : Atharv
+10. -d : It is used to delete shell variables. to do it type -p followed by name of variable that you want to delete Example :
+   oshell> declare name Atharv
+   declared!!
+   oshell> -d name
+   name is deleted
+   
+12. copy : It is used to copy (print) whatever the user type next to it  Example:
+    oshell> copy Atharv
+    Atharv
+13. Is : It is used to find that something is or is not present in the directory. It will find whatever typed next to it. It can find buitin commands and any file. If it finds that file , it will prints its path.
+14. Auto-completion : If you press tab it will auto complete uiltin commands that are you typing
 
 
 ## How to run 
