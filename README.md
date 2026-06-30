@@ -18,10 +18,17 @@ actually works . Anyone can use it without any need of installing python , the u
     oshell> declare name Atharv
     declared!!
 ```
-9. history : As the command itself suggests , it is used to view the history of shell and to get any number of last commands of and jujus isutotory followed by that number. 
+8. home : If you type home in oshell , it will redirect you to your home directory. 
+9. history : As the command itself suggests , it is used to view the history of shell and to get any number of last commands of and jujus isutotory followed by that number.For Example if you have used two commands and then use history , its output will be :
+```
+oshell> history
+      1  previous_command_1
+      2  previous_command_2
+      3  history
+```
 10. -p : It is used to print shell variables. to do it type -p followed by name of variable that you want to print type :
   ```
-oshell> declare name Atharv 
+   oshell> declare name Atharv 
    oshell> -p name 
    name : Atharv
 ```
@@ -37,11 +44,18 @@ oshell> declare name Atharv
 12. copy : It is used to copy (print) whawhatevere user type next to it  Example:
    ```
 oshell> copy Atharv
-    Atharv
+Atharv
 ```
-13. Is : It is used to find that something is or is not present in the directory. It will find whatever typed next to it. It can find buitin commands and any file. If it finds that file , it will prints its path.
+13. Is : It is used to find that something is or is not present in the directory. It will find whatever typed next to it. It can find buitin commands and any file. If it finds that file , it will prints its path. Example:
+ ```
+ oshell> Is Is
+ Is is a builtin command
+```
 14. Auto-completion : If you press tab it will auto complete uiltin commands that are you typing
-
+ ```
+oshell>ex<TAB>
+oshell>exit 
+```
 
 ## How to run 
 Just download a main.exe from here and double click to run and its ready to use. If you want to run it from source code , then run these commands in your terminal (make sure you have Python 3.x is installed in your device)
