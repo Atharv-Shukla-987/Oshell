@@ -65,6 +65,13 @@ Just download a main.exe from here and double click to run and its ready to use.
 3. python main.py
    Now enjoy using Oshell commands !!!!!
 
+## Future Plans
+
+1. adding relative paths
+2. auto Filename Completion
+3. adding Background Jobs
+4. adding some logic between the braces.
+   
 ## Contributing
 
 Contributions are welcome! Feel free to contribute  love helps but never get any lol. Use the following steps
