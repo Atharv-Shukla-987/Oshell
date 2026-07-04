@@ -203,6 +203,15 @@ def main():
               path = words[2]
               fav_dirs[name] = path
               print(f"Saved {path} as {name}")
+        elif main_com == 'add':
+           res = 0
+           for i in args:
+              try:
+                 res += int(i)
+              except ValueError:
+                 err(f"{i} is not a valid integer")
+                 break
+           print(f"Result: {res}")
         elif com.startswith("Is "):
           user_input = com[3:]
           if user_input in valid_com :
