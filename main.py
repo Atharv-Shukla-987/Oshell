@@ -47,8 +47,7 @@ def main():
                 current_path = previous_path
                 os.chdir(current_path)
            else :
-                err("Invaild path")
-             
+                err("Invaild path")     
         elif main_com == "gd":
           print()
           if len(words) == 2 :
@@ -82,8 +81,7 @@ def main():
                  except IsADirectoryError:
                     err(f"{filename} : is a directory")
                  except PermissionError:
-                    err(f"{filename} : permission denied")
-                    
+                    err(f"{filename} : permission denied")     
         elif main_com == 'declare':
            if len(words) == 1 :
               print("please enter name of variable then its value")
@@ -150,8 +148,7 @@ def main():
                         err("number must be smaller than number of total commands")
                 
               except ValueError:
-                 err("plzz enter a number only after history")
-                   
+                 err("plzz enter a number only after history")           
         elif main_com == '-p':
            if len(words) > 2 :
               print("The name of variable cant have space")
@@ -163,7 +160,6 @@ def main():
                  print(var ," : ", val)
            else:
               print("no such variable exits")
-      
         elif main_com == '-d':
            if len(words) > 2:
               print("the name of variable cant have space")
@@ -256,7 +252,15 @@ def main():
              if not found :
                 print(f'{user_input}: not found')
           print()
-              
+        elif main_com == 'variables':
+           if variables:
+              print("Here are the declared variables")
+              for var, val in variables.items():
+                 print(f"{var} : {val}")     
+                 print()
+           else:
+              print("No varibles declared yet") 
+              print()
         else :
             print()
             try:
