@@ -1,3 +1,4 @@
+import random
 import sys ,subprocess ,os ,shlex,time
 try:
     import readline
@@ -27,7 +28,7 @@ def main():
         if not com:
            continue
         words = com.split()
-        main_com = words[0]
+        main_com = words[0].lower()
         args = words[1:]
         
         try:
@@ -147,7 +148,25 @@ def main():
         elif com.startswith("copy "):
           print()
           print(com[5:])
-        
+        elif main_com == "help":
+           print()
+           print("gd : go to previous directory")
+           print("gpd : go to previous directory")
+           print("history : show command history")
+           print("exit : exit the shell")
+           print("copy : copy the text after copy command")
+           print("Is : check if the command is a buildin command or not")
+           print("home : go to home directory")
+           print("pwd : show current working directory")
+           print("declare : declare a variable with its value")
+           print("-p : print the value of variable")
+           print("-d : delete the variable")
+           print("random : generate a random number between two numbers")
+        elif main_com == 'random':
+           n1 = int(words[1])
+           n2 = int(words[2])
+           res = random.randint(n1,n2)
+           print(f'Result: {res}')
         elif com.startswith("Is "):
           user_input = com[3:]
           if user_input in valid_com :
