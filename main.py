@@ -8,7 +8,7 @@ except ModuleNotFoundError:
 home = os.path.expanduser("~")
 current_path = os.getcwd()
 previous_path = os.getcwd()
-valid_com = ['gd','gpd','history','exit','copy' ,'Is','home','pwd','declare','-d','-p','help','random']
+valid_com = ['gd','gpd','history','exit','copy' ,'Is','home','pwd','declare','-d','-p','help','random','min','max']
 variables = {}
 fav_dirs = {}
 
@@ -169,10 +169,14 @@ def main():
               print("the name of variable cant have space")
            elif len(words) == 1 :
               print("enter the name of variable")
-           if var in variables :
-              var = words[1]
-              print(var , "is deleted!!!")
-              del variables[var]
+           else:
+              _in = words[1]
+              if _in in variables :
+               print(_in , "is deleted!!!")
+               del variables[_in]
+              if _in in fav_dirs :
+               print(_in , "is deleted!!!")
+               del fav_dirs[_in]
         elif com.startswith("copy "):
           print()
           print(com[5:])
