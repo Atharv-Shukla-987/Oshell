@@ -8,9 +8,9 @@ except ModuleNotFoundError:
 home = os.path.expanduser("~")
 current_path = os.getcwd()
 previous_path = os.getcwd()
-valid_com = ['gd','gpd','history','exit','copy' ,'Is','home','pwd','declare','-d','-p']
+valid_com = ['gd','gpd','history','exit','copy' ,'Is','home','pwd','declare','-d','-p','help','random']
 variables = {}
-
+fav_dirs = {}
 
 def err(text):
    print(f"\033[91mError You are a dumb!!!\033[0m")
@@ -32,7 +32,7 @@ def main():
         args = words[1:]
         
         try:
-            words = shlex.split(com)
+            words = shlex.split(com , posix=False)
         except ValueError:
            continue
    
@@ -53,6 +53,8 @@ def main():
           print()
           if len(words) == 2 :
             target_path = words[1]
+            if target_path in fav_dirs :
+               target_path = fav_dirs[target_path]
             if os.path.isdir(os.path.abspath(os.path.join(current_path,target_path))):
                previous_path = current_path
                current_path = os.path.abspath(os.path.join(current_path,target_path))
@@ -167,6 +169,14 @@ def main():
            n2 = int(words[2])
            res = random.randint(n1,n2)
            print(f'Result: {res}')
+        elif main_com == 'save':
+           if len(words) != 3:
+              err("use correct syntax: save <name> <path>")
+           else:
+              name = words[1]
+              path = words[2]
+              fav_dirs[name] = path
+              print(f"Saved {path} as {name}")
         elif com.startswith("Is "):
           user_input = com[3:]
           if user_input in valid_com :
