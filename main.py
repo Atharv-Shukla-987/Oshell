@@ -89,11 +89,37 @@ def main():
               print("please enter name of variable then its value")
            if len(words) == 2 :
               print("please enter value of variable")
-           if len(words) > 3:
-              print("you can only write two words after declare , first is name of variable and second is value")  
+           if len(words) > 4:
+              err("you can only write three words after declare , first is name of variable and second is value and third is optional , it is the type of variable the default type is string")  
            if len(words) == 3 :
               var = words[1]
               val = words[2] 
+              if var in variables :
+                 print("varible is alredy exits")
+              else:
+                 if var.isidentifier():
+                    variables[var] = val
+                    print("declared!!")
+                 else:
+                    print(f"\033[91mError: invaild identifier\033[0m")
+           if len(words) == 4 :
+              var = words[1]
+              val = words[2]
+              type = words[3].lower()
+              if type == 'int':
+                 try:
+                    val = int(val)
+                 except ValueError:
+                    err("value is not a valid integer")
+                    continue 
+              if type == 'bool':
+                   if val.lower() in ['true', '1']:
+                     val = True
+                   elif val.lower() in ['false', '0']:
+                     val = False
+                   else:
+                     err("value is not a valid boolean")
+                     continue
               if var in variables :
                  print("varible is alredy exits")
               else:
