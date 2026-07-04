@@ -75,7 +75,7 @@ add 1 2 3  4
  ```
 mul 45 98 85 
 ```
-20. min : it used to give the lowest value between guven numbers
+20. min : it used to give the lowest value between given numbers
 21. max : it is used to give highest value between given numbers
 22. variables :  it is used to print/show all assigened variables in shell 
 
