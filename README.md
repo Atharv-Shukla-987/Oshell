@@ -57,6 +57,28 @@ oshell>ex<TAB>
 oshell>exit 
 ```
 
+
+15. help : it is used to show all available commands 
+
+16. random : it is used to generate a random number between any 2 given numbers
+
+17. save : it is used to save a directory for future, so  everytime you don't need to search for fravraite directory
+
+18. add : it is used to add 2 or more numbers for example this is used to add 1+2+3+4
+
+ ```
+add 1 2 3  4 
+```
+
+19. mul : it is used to multiply as much number as you want for example if you need to multiply 45*98*85
+
+ ```
+mul 45 98 85 
+```
+20. min : it used to give the lowest value between guven numbers
+21. max : it is used to give highest value between given numbers
+22. variables :  it is used to print/show all assigened variables in shell 
+
 ## How to run 
 Just download a main.exe from here and double click to run and its ready to use. If you want to run it from source code , then run these commands in your terminal (make sure you have Python 3.x is installed in your device)
 
@@ -83,4 +105,4 @@ Contributions are welcome! Feel free to contribute  love helps but never get any
 
 
 ## License
-This project is licensed under the MIT License.
+this is free to be used by anyone
