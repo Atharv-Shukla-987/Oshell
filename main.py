@@ -221,6 +221,18 @@ def main():
                    err(f"{i} is not a valid integer")
                    break
            print(f"Result: {res}")
+        elif main_com == 'max':
+           try:
+              res = max(int(i) for i in args)
+           except ValueError :
+              err("all arguments must be vaild integers")
+           print(f'Result: {res}')
+        elif main_com == 'min':
+           try:
+              res = min(int(i) for i in args)
+           except ValueError:
+              err("all arguments must be vaild integers")
+           print(f'Result: {res}')
         elif com.startswith("Is "):
           user_input = com[3:]
           if user_input in valid_com :
