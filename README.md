@@ -8,8 +8,8 @@ actually works . Anyone can use it without any need of installing python , the u
 
 
 ## THEME
-No Internet because its a terminal project and can un without any internet>>>>>>>>>>>>>
 
+Endless , it never ends , it gives output and waits for input . its made with python loop.
 
 
 
