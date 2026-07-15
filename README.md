@@ -6,6 +6,17 @@
 It is a custom shell made using python. I build it from scratch because i wanna learn how th shell actually works.It has variable management and tab-auto-completion and many custom commands. Its important to understand that its not for replacing powershell or cmd , It's just a fun learning project that 
 actually works . Anyone can use it without any need of installing python , the user is just need to double click on .exe .
 
+
+## THEME
+No Internet because its a terminal project nad can un without any internet>>>>>>>>>>>>>
+
+
+
+
+
+
+
+
 ## Features
 1. exit : It is used to exit from the shell. 
 2. cls : It is used to clear the shell
